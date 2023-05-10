@@ -1,0 +1,33 @@
+//IPFS IMPORT
+var ipfsAPI = require('ipfs-api');
+
+//CREATE INSTANCE
+var ipfs = ipfsAPI(
+		'ipfs.infura.io',
+		'5001',
+		{
+			protocol: 'https'
+		}
+	)
+
+
+var toReturn = "";
+
+var addFileToIPFS = (data) => {
+	return ipfs.files.add(data);
+}
+
+function sendFileToIPFS(data){
+	addFileToIPFS(data)
+		.then(res => {
+			const hash = res[0]['hash'];
+			console.log('hash', hash);
+			window.EscrowApp.handleSubmit(hash); 
+			toReturn = hash;
+			return toReturn;
+})}
+
+//EXAMPLE:
+//sendFileToIPFS(new Buffer("helloWorld")); //Returns a hash
+
+module.exports = function(data) { return sendFileToIPFS(data) }

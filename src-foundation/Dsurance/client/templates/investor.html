@@ -1,0 +1,31 @@
+---
+name: investor
+url: /investor
+---
+
+<div ng-controller = "MainController as c" class="grid-container">
+	<br></br>	
+	<div class="card">
+		<div class="card-divider">
+			<span style="font-size:20px"><center><strong>Become an investor:</strong></center></span>	
+		</div>
+		<div class="card-section">
+			<form>
+				<label>
+					Full Name
+					<input type="text" ng-model="c.full_name" placeholder="Legal Name">
+				</label>
+				<label>
+					Occupation
+					<input type="text" ng-model="c.occupation" placeholder="Title">
+				</label>
+				<label>
+					Investment Amount
+					<input type="text" ng-model="c.investment_amount" placeholder="ETH Amount">
+				</label>
+			</form>
+			<br></br>
+			<a class="button" ng-click="c.submit_inv_application()">Submit Application</a>
+		</div>
+	</div>
+</div>
