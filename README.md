@@ -1,6 +1,6 @@
-# Dsurance
+# ChainInsure
 
-The aim of Dsurance is to replace centralized insurance institutions with a smart contract on the blockchain, which would automatically pool premiums and guarantee payout of claims upon insured losses. This would remove the overhead cost of reserving, render the insurance process completely transparent, and allow virtually any type of insurance to be available to anybody across the globe. The smart contract would become the insurer.
+The aim of ChainInsure is to replace centralized insurance institutions with a smart contract on the blockchain, which would automatically pool premiums and guarantee payout of claims upon insured losses. This would remove the overhead cost of reserving, render the insurance process completely transparent, and allow virtually any type of insurance to be available to anybody across the globe. The smart contract would become the insurer.
 
 Current features:
 
