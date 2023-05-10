@@ -8,7 +8,7 @@ Current features:
 * Policyholder claim workflow and claim authorization process for investors to permit claim payouts.
 * Mechanism to incentivize investors to authorize valid claims and reject fake claims.
 
-Lots can be done to keep building on Dsurance. Most notably:
+Lots can be done to keep building on ChainInsure. Most notably:
 
 * Enhanced consensus algorithm between investors to establish validity of policyholder claims.
 * Risk Segmentation algorithm allowing for policyholders to be charged as a function of their risk characteristics.
@@ -29,7 +29,7 @@ truffle migrate
 
 Contract deployment code lives in `migrations/2_deploy_contracts.js`.
 
-Front-end code can be as dumb as possible. I recommend just old HTML with Bootstrap to get things working.
+Front-end code can be as dumb as possible. 
 Put all front-end code inside `src`. Avoid deleting any of the files in `src/js` since we'll by modifying plenty of
 this to talk to out smart contracts the way we want to.
 
